@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchor_ana" prefHeight="650.0" prefWidth="970.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="application.EmlakController">
+   <children>
+      <ImageView fitHeight="652.0" fitWidth="996.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Emlak%20Otomasyonu%20Resimler/5885814998_d87ef7bfc4_c.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="anchor_ic" layoutX="26.0" layoutY="123.0" prefHeight="500.0" prefWidth="930.0" />
+      <Label layoutX="26.0" layoutY="34.0" prefHeight="51.0" prefWidth="970.0" text="Su toprağa hayat, gayrimenkul insana özgür bir yaşam alanı vadeder!" textFill="#b08b27">
+         <font>
+            <Font name="Monotype Corsiva" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

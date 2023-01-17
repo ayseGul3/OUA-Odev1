@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ilanDuzenleController">
+   <children>
+      <SplitPane dividerPositions="0.487661937075879" layoutX="287.0" layoutY="94.0" orientation="VERTICAL" prefHeight="650.0" prefWidth="980.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="1007.0">
+               <children>
+                  <ImageView fitHeight="628.0" fitWidth="998.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Emlak%20Otomasyonu%20Resimler/yuksek-binalar-ve-gece-manzarasi-wallpaper-arka-plan.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn_ekle" layoutX="818.0" layoutY="27.0" mnemonicParsing="false" onAction="#btn_ekle_click" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #b1b1b1;" text="Ekle" textFill="#561181">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_temizle" layoutX="818.0" layoutY="203.0" mnemonicParsing="false" onAction="#btn_temizle_click" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #b1b1b1;" text="Temizle" textFill="#561181">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_guncelle" layoutX="818.0" layoutY="143.0" mnemonicParsing="false" onAction="#btn_guncelle_click" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #b1b1b1;" text="Güncelle" textFill="#561181">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_sil" layoutX="818.0" layoutY="85.0" mnemonicParsing="false" onAction="#btn_sil_click" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #b1b1b1;" text="Sil" textFill="#561181">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_cikis" layoutX="818.0" layoutY="262.0" mnemonicParsing="false" onAction="#btn_cikis_click" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #b1b1b1;" text="Çıkış" textFill="#561181">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="36.0" layoutY="35.0" text="İlan Başlık:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="198.0" text="Bulunduğu Kat:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="113.0" text="Kat Sayısı:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="153.0" text="Oda Sayısı:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="583.0" layoutY="34.0" text="Fiyat:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="327.0" layoutY="113.0" text="İlan No:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="238.0" text="Metrekare:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="588.0" layoutY="113.0" text="Tür:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="552.0" layoutY="154.0" text="Kategori:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="552.0" layoutY="198.0" text="Açıklama:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="333.0" layoutY="198.0" text="Adres:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="335.0" layoutY="153.0" text="Şehir:" textFill="#b1b1b1">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_ilanbaslik" layoutX="138.0" layoutY="30.0" prefHeight="31.0" prefWidth="412.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_fiyat" layoutX="636.0" layoutY="30.0" prefHeight="31.0" prefWidth="142.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_katsay" layoutX="151.0" layoutY="111.0" prefHeight="26.0" prefWidth="134.0" />
+                  <TextField fx:id="txt_metrek" layoutX="151.0" layoutY="236.0" prefHeight="26.0" prefWidth="134.0" />
+                  <TextField fx:id="txt_bulkat" layoutX="151.0" layoutY="196.0" prefHeight="26.0" prefWidth="134.0" />
+                  <TextField fx:id="txt_odasay" layoutX="151.0" layoutY="156.0" prefHeight="26.0" prefWidth="134.0" />
+                  <TextField fx:id="txt_tur" layoutX="643.0" layoutY="111.0" prefHeight="26.0" prefWidth="134.0" />
+                  <TextField fx:id="txt_sehir" layoutX="398.0" layoutY="151.0" prefHeight="26.0" prefWidth="134.0" />
+                  <TextField fx:id="txt_ilanid" layoutX="398.0" layoutY="111.0" prefHeight="26.0" prefWidth="134.0" />
+                  <TextField fx:id="txt_kategori" layoutX="643.0" layoutY="151.0" prefHeight="26.0" prefWidth="134.0" />
+                  <TextArea fx:id="txta_adres" layoutX="394.0" layoutY="196.0" prefHeight="106.0" prefWidth="142.0" />
+                  <TextArea fx:id="txta_aciklama" layoutX="639.0" layoutY="194.0" prefHeight="114.0" prefWidth="142.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="674.0" fitWidth="1058.0" layoutX="-4.0" layoutY="-345.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Emlak%20Otomasyonu%20Resimler/yuksek-binalar-ve-gece-manzarasi-wallpaper-arka-plan.jpg" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="tableview_ilangor" onMouseClicked="#tableview_ilangor_mauseclick" opacity="0.8" prefHeight="330.0" prefWidth="1122.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-124.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="tab_id" prefWidth="51.20001369714737" text="İlan No" />
+                        <TableColumn fx:id="tab_baslik" prefWidth="146.40001678466797" text="İlan Başlık" />
+                        <TableColumn fx:id="tab_tur" prefWidth="58.4000244140625" text="Tür" />
+                        <TableColumn fx:id="tab_kategori" prefWidth="67.20001220703125" text="Kategori" />
+                        <TableColumn fx:id="tab_sehir" prefWidth="73.60005187988281" text="Şehir" />
+                        <TableColumn fx:id="tab_fiyat" prefWidth="69.5999755859375" text="Fiyat" />
+                        <TableColumn fx:id="tab_metrekare" prefWidth="63.20001220703125" text="Metrekare" />
+                        <TableColumn fx:id="tab_odasay" prefWidth="68.79998779296875" text="Oda Sayısı" />
+                        <TableColumn fx:id="tab_katsay" prefWidth="59.2000732421875" text="Kat Sayısı" />
+                        <TableColumn fx:id="tab_bulkat" prefWidth="89.60009765625" text="Bulunduğu Kat" />
+                        <TableColumn fx:id="tab_adres" prefWidth="92.7999267578125" text="Adres " />
+                        <TableColumn fx:id="tab_aciklama" prefWidth="132.0" text="Açıklama" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

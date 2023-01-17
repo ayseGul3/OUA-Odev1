@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_kayit" prefHeight="500.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.kayitController">
+   <children>
+      <ImageView fitHeight="527.0" fitWidth="942.0" layoutX="-3.0" layoutY="-4.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Emlak%20Otomasyonu%20Resimler/blue-background-1920x1080_c.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="204.0" layoutY="159.0" prefHeight="31.0" prefWidth="39.0" text="Ad:" textFill="#bcaaaa">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="147.0" prefHeight="54.0" prefWidth="90.0" text="E-posta:" textFill="#bcaaaa">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="244.0" prefHeight="54.0" prefWidth="150.0" text="Kullanıcı Adı:" textFill="#bcaaaa">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="198.0" prefHeight="40.0" prefWidth="78.0" text="Soyadı:" textFill="#bcaaaa">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="255.0" prefHeight="31.0" prefWidth="61.0" text="Şifre:" textFill="#bcaaaa">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="201.0" prefHeight="40.0" prefWidth="90.0" text="Telefon:" textFill="#bcaaaa">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_ad" layoutX="261.0" layoutY="161.0" prefHeight="27.0" prefWidth="162.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_soyad" layoutX="261.0" layoutY="207.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_kulad" layoutX="261.0" layoutY="258.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_posta" layoutX="610.0" layoutY="161.0" prefHeight="27.0" prefWidth="175.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_tel" layoutX="610.0" layoutY="207.0" prefHeight="27.0" prefWidth="175.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_sifre" layoutX="610.0" layoutY="258.0" prefHeight="27.0" prefWidth="175.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_kayitol" layoutX="342.0" layoutY="364.0" mnemonicParsing="false" onAction="#btn_kayitol_click" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #bdc5d4;" text="Kayıt Ol" textFill="#204384">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_cikis" layoutX="519.0" layoutY="364.0" mnemonicParsing="false" onAction="#btn_cikis_click" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #bdc5d4;" text="Çıkış" textFill="#204384">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="355.0" layoutY="28.0" text="Kayıt Formu" textFill="#c4b3b3">
+         <font>
+            <Font name="Bodoni MT" size="50.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anhor_ilangor" prefHeight="650.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ilanGorController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="990.0">
+         <children>
+            <SplitPane dividerPositions="0.3241826033312769" layoutX="223.0" layoutY="24.0" orientation="VERTICAL" prefHeight="650.0" prefWidth="950.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <ImageView fitHeight="317.0" fitWidth="990.0" layoutX="-1.0" layoutY="-6.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Emlak%20Otomasyonu%20Resimler/maxresdedfxault.jpg" />
+                           </image>
+                        </ImageView>
+                        <ToggleButton fx:id="tog_tur" layoutX="138.0" layoutY="29.0" mnemonicParsing="false" onAction="#tog_tur_click" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: #dbdfe1;" text="Tür" textFill="#167099">
+                           <font>
+                              <Font name="Book Antiqua" size="16.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton fx:id="tog_kategori" layoutX="292.0" layoutY="30.0" mnemonicParsing="false" onAction="#tog_kategori_click" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: #dbdfe1;" text="Kategori" textFill="#167099">
+                           <font>
+                              <Font name="Book Antiqua" size="16.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton fx:id="tog_odasay" layoutX="589.0" layoutY="30.0" mnemonicParsing="false" onAction="#tog_odasay_click" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: #dbdfe1;" text="Oda Sayısı" textFill="#167099">
+                           <font>
+                              <Font name="Book Antiqua" size="16.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton fx:id="tog_fiyat" layoutX="442.0" layoutY="30.0" mnemonicParsing="false" onAction="#tog_fiyat_click" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: #dbdfe1;" text="Fiyat" textFill="#167099">
+                           <font>
+                              <Font name="Book Antiqua" size="16.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton fx:id="tog_sehir" layoutX="737.0" layoutY="30.0" mnemonicParsing="false" onAction="#tog_sehir_click" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: #dbdfe1;" text="Şehir" textFill="#167099">
+                           <font>
+                              <Font name="Book Antiqua" size="16.0" />
+                           </font>
+                        </ToggleButton>
+                        <TextField fx:id="txt_ara" layoutX="229.0" layoutY="109.0" prefHeight="19.0" prefWidth="370.0" promptText="Ne aramıştınız?">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btn_ara" layoutX="622.0" layoutY="108.0" mnemonicParsing="false" onAction="#btn_ara_click" prefHeight="33.0" prefWidth="58.0" style="-fx-background-color: #3b44a6;" textFill="#3b44a6">
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="47.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Emlak%20Otomasyonu%20Resimler/png-transparent-magnifying-glass-searching-icon-blue-symbol-circle-apps-search-blue-search-engine-optimization-application.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <RadioButton fx:id="radio_azalan" layoutX="129.0" layoutY="98.0" mnemonicParsing="false" onAction="#radio_azalan_click" prefHeight="22.0" prefWidth="87.0" style="-fx-background-color: #b77fa9;" text="Azalan" textFill="#dbdfe1">
+                           <font>
+                              <Font name="Book Antiqua" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <Button fx:id="btn_cikis" layoutX="685.0" layoutY="108.0" mnemonicParsing="false" onAction="#btn_cikis_click" prefHeight="40.0" prefWidth="39.0" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Emlak%20Otomasyonu%20Resimler/128-1281797_close-x-blue-cancel-iconnn.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <RadioButton fx:id="radio_artan" layoutX="129.0" layoutY="137.0" mnemonicParsing="false" onAction="#radio_artan_click" prefHeight="22.0" prefWidth="87.0" style="-fx-background-color: #b77fa9;" text="Artan" textFill="#dbdfe1">
+                           <font>
+                              <Font name="Book Antiqua" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <Button fx:id="btn_temizle" layoutX="746.0" layoutY="108.0" mnemonicParsing="false" onAction="#btn_temizle_click" prefHeight="40.0" prefWidth="51.0" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Emlak%20Otomasyonu%20Resimler/unnamed2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="949.0">
+                     <children>
+                        <ImageView fitHeight="560.0" fitWidth="989.0" layoutY="-40.0" opacity="0.98" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Emlak%20Otomasyonu%20Resimler/pink-1920x1080_c.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="tableview_ilangor" onMouseClicked="#tableview_ilangor_mauseclick" opacity="0.69" prefHeight="436.0" prefWidth="989.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="tab_baslik" prefWidth="128.79998630285263" text="İlan Başlık" />
+                              <TableColumn fx:id="tab_tur" prefWidth="52.0" text="Tür" />
+                              <TableColumn fx:id="tab_kategori" prefWidth="67.20001220703125" text="Kategori" />
+                              <TableColumn fx:id="tab_sehir" prefWidth="73.60005187988281" text="Şehir" />
+                              <TableColumn fx:id="tab_fiyat" prefWidth="69.5999755859375" text="Fiyat" />
+                              <TableColumn fx:id="tab_metrekare" prefWidth="72.0" text="Metrekare" />
+                              <TableColumn fx:id="tab_odasay" prefWidth="65.60006713867188" text="Oda Sayısı" />
+                              <TableColumn fx:id="tab_katsay" prefWidth="65.60003662109375" text="Kat Sayısı" />
+                              <TableColumn fx:id="tab_bulkat" prefWidth="88.800048828125" text="Bulunduğu Kat" />
+                              <TableColumn fx:id="tab_adres" prefWidth="144.0" text="Adres " />
+                              <TableColumn fx:id="tab_aciklama" prefWidth="174.4000244140625" text="Açıklama" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
